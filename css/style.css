@@ -1,0 +1,259 @@
+/* 1. General Style */
+
+* {
+	box-sizing: border-box;
+	color: rgba(0, 0, 0, 0.87);
+	font-family: 'Arial';
+}
+
+html, body, #wrapper {
+	margin: 0px;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+}
+
+hr {
+	border-color: rgba(0, 0, 0, 0.12);
+	width: 100%;
+	margin-bottom: 8px;
+}
+
+.br {
+	margin-bottom: 8px;
+}
+
+h1 {
+	color: white;
+	line-height: 64px;
+	font-size: 24px;
+	margin: 0px;
+	font-weight: 400;
+}
+
+/* 		Colors */
+
+.b-p-100 {
+	background-color: #B2DFDB;
+}
+
+.b-p-500 {
+	background-color: #009688;
+}
+
+.b-p-700 {
+	background-color: #00796B;
+}
+
+.a-p-100 {
+	background-color: #FFD180;
+}
+
+.a-p-200 {
+	background-color: #FFAB40;
+}
+
+.a-p-400 {
+	background-color: #FF9100;
+}
+
+.white {
+	background-color: #FFFFFF;
+}
+
+.divider {
+	background-color: rgba(0, 0, 0, 0.12);
+}
+
+/* 		Icons */
+
+.icon {
+	width: 72px;
+	height: 64px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 24px;
+	padding: 24px;
+	position: relative;
+	float: left;
+}
+
+.search {
+	background-image: url('../img/ic_search_white_24dp.png');
+}
+
+.homew {
+	background-image: url('../img/ic_home_white_24dp.png');
+}
+
+.homeg {
+	background-image: url('../img/ic_home_grey600_24dp.png');
+}
+
+.message {
+	background-image: url('../img/ic_message_grey600_24dp.png');
+}
+
+.group {
+	background-image: url('../img/ic_group_grey600_24dp.png');
+}
+
+.event {
+	background-image: url('../img/ic_event_grey600_24dp.png');
+}
+
+.settings {
+	background-image: url('../img/ic_settings_grey600_24dp.png');
+}
+
+/* 2. Nav Bar Style */
+
+#nav {
+	width: 100%;
+	height: 64px;
+	position: relative;
+	z-index: 2;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.26);
+}
+
+#nav * {
+	position: relative;
+	float: left;
+}
+
+#nav input {
+	height: 64px;
+	width: 246px;
+	line-height: 64px;
+	font-size: 23px;
+	padding-left: 8px;
+	padding-right: 8px;
+	outline: none;
+	border: none;
+	color: white;
+	background-color: transparent;
+	transition: width 0.5s ease;
+}
+
+#search.saexpanded {
+	width: 568px;
+}
+
+#nav input:focus {
+	outline: none;
+	border: none;
+}
+
+#nav ::-webkit-input-placeholder { /* WebKit browsers */
+   color:    rgba(255, 255, 255, 0.26);
+}
+#nav :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    rgba(255, 255, 255, 0.26);
+}
+#nav ::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    rgba(255, 255, 255, 0.26);
+}
+#nav :-ms-input-placeholder { /* Internet Explorer 10+ */
+   color:    rgba(255, 255, 255, 0.26);
+}
+
+/* 3. Main Style */
+
+#main {
+	box-shadow: none;
+	width: 975px;
+	height: 100%;
+	position: relative;
+	float: left;
+	transition: box-shadow 0.5s ease;
+}
+
+#main.saexpanded {
+	width: 1293px;
+	box-shadow: -2px 0px 5px rgba(0, 0, 0, 0.26);
+}
+
+/* 4. Side Bar Style */
+
+.sidebar {
+	width: 320px;
+	height: 100%;
+
+	position: relative;
+	float: left;
+}
+
+#suser {
+	border-right: 2px solid rgba(0, 0, 0, 0.12);
+	box-shadow: none;
+	transition: box-shadow, border 0.5s ease;
+	box-sizing: content-box;
+}
+
+#suser.saexpanded {
+	box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.26);
+	border: 0px;
+}
+
+#saction {
+	transition: width 0.5s ease;
+	width: 0px;
+}
+
+#saction.saexpanded {
+	width: 320px;
+}
+
+#usbanner {
+	width: 100%;
+	height: 180px;
+	background-image: url('../img/DeathtoStock_Wired3.jpg');
+	background-size: cover;
+	background-position: center;
+	padding-top: 24px;
+}
+
+#usicon {
+	width: 96px;
+	height: 96px;
+	background-size: cover;
+	background-position: center;
+	background-image: url('../img/DeathtoStock_Wired8.jpg');
+	border-radius: 100%;
+	margin-left: 24px;
+	margin-bottom: 12px;
+}
+
+#usname {
+	height: 48px;
+	line-height: 48px;
+	font-size: 16px;
+	padding-left: 24px;
+	color: white;
+}
+
+.sidebar-categ {
+	width: 100%;
+	height: 64px;
+}
+
+h3 {
+	max-width: 240px;
+	line-height: 64px;
+	font-size: 14px;
+	font-weight: 700;
+	margin: 0px;
+	position: relative;
+	float: left;
+	color: rgba(0, 0, 0, 0.54);
+}
+
+/* 5. Footer Style */
+
+.animatable-width {
+	width: 0px;
+}
+
+.animated-width {
+	width: auto;
+}
